@@ -4,7 +4,10 @@ gocmds
 Template for Go commands.
 
   * Move everything into `Run` function
-  * Make command line tools testable
+  * Call `Run` from `main` (and that's all)
+  * Call `Run` from test code
+
+See the `main.go` and `main_test.go` files in this project for a real example, including how flags can work.
 
 ```
 func main() {
